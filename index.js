@@ -1,11 +1,13 @@
 // // server.js
 const express = require('express');
-const { MongoClient, ObjectId } = require("mongodb");
+const { MongoClient, ObjectId, CURSOR_FLAGS } = require("mongodb");
 const cors = require('cors');
 const bodyParser = require('body-parser');
 
 const app = express();
 const port = 5000;
+
+console.log('')
 
 // Middleware
 app.use(cors());
